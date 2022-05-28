@@ -1,0 +1,666 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B172D4562841054F0040C4D7 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = B172D4552841054F0040C4D7 /* Network.swift */; };
+		B172D45928410DF10040C4D7 /* CoinDataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B172D45828410DF10040C4D7 /* CoinDataModels.swift */; };
+		B19FAE512840CC2600AE9612 /* SendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FAE502840CC2600AE9612 /* SendView.swift */; };
+		B19FAE532840CC5300AE9612 /* NavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FAE522840CC5300AE9612 /* NavView.swift */; };
+		B1C043C2283F605F007700D8 /* EthWalletApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C043C1283F605F007700D8 /* EthWalletApp.swift */; };
+		B1C043C4283F605F007700D8 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C043C3283F605F007700D8 /* HomePage.swift */; };
+		B1C043C6283F6063007700D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1C043C5283F6063007700D8 /* Assets.xcassets */; };
+		B1C043C9283F6063007700D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1C043C8283F6063007700D8 /* Preview Assets.xcassets */; };
+		B1C043D3283F6063007700D8 /* EthWalletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C043D2283F6063007700D8 /* EthWalletTests.swift */; };
+		B1C043DD283F6063007700D8 /* EthWalletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C043DC283F6063007700D8 /* EthWalletUITests.swift */; };
+		B1C043DF283F6063007700D8 /* EthWalletUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C043DE283F6063007700D8 /* EthWalletUITestsLaunchTests.swift */; };
+		B1C043EE283F7E78007700D8 /* OptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C043ED283F7E77007700D8 /* OptionsView.swift */; };
+		B1C043F0283F83CF007700D8 /* SegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C043EF283F83CE007700D8 /* SegmentView.swift */; };
+		B1C043F2283FCB29007700D8 /* CoinListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C043F1283FCB29007700D8 /* CoinListView.swift */; };
+		B1C043F5283FE50D007700D8 /* CoinListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C043F4283FE50C007700D8 /* CoinListViewModel.swift */; };
+		B1C043FB2840897A007700D8 /* QRScanerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C043FA2840897A007700D8 /* QRScanerView.swift */; };
+		B1C043FD2840936A007700D8 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C043FC2840936A007700D8 /* CameraView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B1C043CF283F6063007700D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1C043B6283F605F007700D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1C043BD283F605F007700D8;
+			remoteInfo = EthWallet;
+		};
+		B1C043D9283F6063007700D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1C043B6283F605F007700D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1C043BD283F605F007700D8;
+			remoteInfo = EthWallet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B172D4552841054F0040C4D7 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		B172D45828410DF10040C4D7 /* CoinDataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataModels.swift; sourceTree = "<group>"; };
+		B19FAE502840CC2600AE9612 /* SendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendView.swift; sourceTree = "<group>"; };
+		B19FAE522840CC5300AE9612 /* NavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavView.swift; sourceTree = "<group>"; };
+		B1C043BE283F605F007700D8 /* EthWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EthWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1C043C1283F605F007700D8 /* EthWalletApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthWalletApp.swift; sourceTree = "<group>"; };
+		B1C043C3283F605F007700D8 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		B1C043C5283F6063007700D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B1C043C8283F6063007700D8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B1C043CE283F6063007700D8 /* EthWalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EthWalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1C043D2283F6063007700D8 /* EthWalletTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthWalletTests.swift; sourceTree = "<group>"; };
+		B1C043D8283F6063007700D8 /* EthWalletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EthWalletUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1C043DC283F6063007700D8 /* EthWalletUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthWalletUITests.swift; sourceTree = "<group>"; };
+		B1C043DE283F6063007700D8 /* EthWalletUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthWalletUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B1C043ED283F7E77007700D8 /* OptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsView.swift; sourceTree = "<group>"; };
+		B1C043EF283F83CE007700D8 /* SegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentView.swift; sourceTree = "<group>"; };
+		B1C043F1283FCB29007700D8 /* CoinListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListView.swift; sourceTree = "<group>"; };
+		B1C043F4283FE50C007700D8 /* CoinListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListViewModel.swift; sourceTree = "<group>"; };
+		B1C043FA2840897A007700D8 /* QRScanerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScanerView.swift; sourceTree = "<group>"; };
+		B1C043FC2840936A007700D8 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B1C043BB283F605F007700D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1C043CB283F6063007700D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1C043D5283F6063007700D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B172D45728410DDB0040C4D7 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				B172D45828410DF10040C4D7 /* CoinDataModels.swift */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		B19FAE542840FA3900AE9612 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B172D4552841054F0040C4D7 /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B1C043B5283F605F007700D8 = {
+			isa = PBXGroup;
+			children = (
+				B1C043C0283F605F007700D8 /* EthWallet */,
+				B1C043D1283F6063007700D8 /* EthWalletTests */,
+				B1C043DB283F6063007700D8 /* EthWalletUITests */,
+				B1C043BF283F605F007700D8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B1C043BF283F605F007700D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1C043BE283F605F007700D8 /* EthWallet.app */,
+				B1C043CE283F6063007700D8 /* EthWalletTests.xctest */,
+				B1C043D8283F6063007700D8 /* EthWalletUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1C043C0283F605F007700D8 /* EthWallet */ = {
+			isa = PBXGroup;
+			children = (
+				B1C043C5283F6063007700D8 /* Assets.xcassets */,
+				B172D45728410DDB0040C4D7 /* DataModels */,
+				B1C043C1283F605F007700D8 /* EthWalletApp.swift */,
+				B19FAE542840FA3900AE9612 /* Network */,
+				B1C043C7283F6063007700D8 /* Preview Content */,
+				B1C043F3283FE4ED007700D8 /* ViewModels */,
+				B1C043EB283F6381007700D8 /* Views */,
+			);
+			path = EthWallet;
+			sourceTree = "<group>";
+		};
+		B1C043C7283F6063007700D8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B1C043C8283F6063007700D8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B1C043D1283F6063007700D8 /* EthWalletTests */ = {
+			isa = PBXGroup;
+			children = (
+				B1C043D2283F6063007700D8 /* EthWalletTests.swift */,
+			);
+			path = EthWalletTests;
+			sourceTree = "<group>";
+		};
+		B1C043DB283F6063007700D8 /* EthWalletUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B1C043DC283F6063007700D8 /* EthWalletUITests.swift */,
+				B1C043DE283F6063007700D8 /* EthWalletUITestsLaunchTests.swift */,
+			);
+			path = EthWalletUITests;
+			sourceTree = "<group>";
+		};
+		B1C043EB283F6381007700D8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B1C043C3283F605F007700D8 /* HomePage.swift */,
+				B1C043ED283F7E77007700D8 /* OptionsView.swift */,
+				B1C043EF283F83CE007700D8 /* SegmentView.swift */,
+				B1C043F1283FCB29007700D8 /* CoinListView.swift */,
+				B1C043FA2840897A007700D8 /* QRScanerView.swift */,
+				B1C043FC2840936A007700D8 /* CameraView.swift */,
+				B19FAE502840CC2600AE9612 /* SendView.swift */,
+				B19FAE522840CC5300AE9612 /* NavView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B1C043F3283FE4ED007700D8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B1C043F4283FE50C007700D8 /* CoinListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B1C043BD283F605F007700D8 /* EthWallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1C043E2283F6063007700D8 /* Build configuration list for PBXNativeTarget "EthWallet" */;
+			buildPhases = (
+				B1C043BA283F605F007700D8 /* Sources */,
+				B1C043BB283F605F007700D8 /* Frameworks */,
+				B1C043BC283F605F007700D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EthWallet;
+			productName = EthWallet;
+			productReference = B1C043BE283F605F007700D8 /* EthWallet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B1C043CD283F6063007700D8 /* EthWalletTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1C043E5283F6063007700D8 /* Build configuration list for PBXNativeTarget "EthWalletTests" */;
+			buildPhases = (
+				B1C043CA283F6063007700D8 /* Sources */,
+				B1C043CB283F6063007700D8 /* Frameworks */,
+				B1C043CC283F6063007700D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1C043D0283F6063007700D8 /* PBXTargetDependency */,
+			);
+			name = EthWalletTests;
+			productName = EthWalletTests;
+			productReference = B1C043CE283F6063007700D8 /* EthWalletTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B1C043D7283F6063007700D8 /* EthWalletUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1C043E8283F6063007700D8 /* Build configuration list for PBXNativeTarget "EthWalletUITests" */;
+			buildPhases = (
+				B1C043D4283F6063007700D8 /* Sources */,
+				B1C043D5283F6063007700D8 /* Frameworks */,
+				B1C043D6283F6063007700D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1C043DA283F6063007700D8 /* PBXTargetDependency */,
+			);
+			name = EthWalletUITests;
+			productName = EthWalletUITests;
+			productReference = B1C043D8283F6063007700D8 /* EthWalletUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1C043B6283F605F007700D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					B1C043BD283F605F007700D8 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					B1C043CD283F6063007700D8 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = B1C043BD283F605F007700D8;
+					};
+					B1C043D7283F6063007700D8 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = B1C043BD283F605F007700D8;
+					};
+				};
+			};
+			buildConfigurationList = B1C043B9283F605F007700D8 /* Build configuration list for PBXProject "EthWallet" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B1C043B5283F605F007700D8;
+			productRefGroup = B1C043BF283F605F007700D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1C043BD283F605F007700D8 /* EthWallet */,
+				B1C043CD283F6063007700D8 /* EthWalletTests */,
+				B1C043D7283F6063007700D8 /* EthWalletUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B1C043BC283F605F007700D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1C043C9283F6063007700D8 /* Preview Assets.xcassets in Resources */,
+				B1C043C6283F6063007700D8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1C043CC283F6063007700D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1C043D6283F6063007700D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B1C043BA283F605F007700D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1C043F2283FCB29007700D8 /* CoinListView.swift in Sources */,
+				B1C043EE283F7E78007700D8 /* OptionsView.swift in Sources */,
+				B172D45928410DF10040C4D7 /* CoinDataModels.swift in Sources */,
+				B19FAE512840CC2600AE9612 /* SendView.swift in Sources */,
+				B1C043C4283F605F007700D8 /* HomePage.swift in Sources */,
+				B1C043F5283FE50D007700D8 /* CoinListViewModel.swift in Sources */,
+				B172D4562841054F0040C4D7 /* Network.swift in Sources */,
+				B1C043F0283F83CF007700D8 /* SegmentView.swift in Sources */,
+				B1C043FB2840897A007700D8 /* QRScanerView.swift in Sources */,
+				B1C043C2283F605F007700D8 /* EthWalletApp.swift in Sources */,
+				B19FAE532840CC5300AE9612 /* NavView.swift in Sources */,
+				B1C043FD2840936A007700D8 /* CameraView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1C043CA283F6063007700D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1C043D3283F6063007700D8 /* EthWalletTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1C043D4283F6063007700D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1C043DD283F6063007700D8 /* EthWalletUITests.swift in Sources */,
+				B1C043DF283F6063007700D8 /* EthWalletUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B1C043D0283F6063007700D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1C043BD283F605F007700D8 /* EthWallet */;
+			targetProxy = B1C043CF283F6063007700D8 /* PBXContainerItemProxy */;
+		};
+		B1C043DA283F6063007700D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1C043BD283F605F007700D8 /* EthWallet */;
+			targetProxy = B1C043D9283F6063007700D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B1C043E0283F6063007700D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B1C043E1283F6063007700D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B1C043E3283F6063007700D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EthWallet/Preview Content\"";
+				DEVELOPMENT_TEAM = FF949MNNAE;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Need Scan QR";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Need Scan QR";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flw.com.EthWallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B1C043E4283F6063007700D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EthWallet/Preview Content\"";
+				DEVELOPMENT_TEAM = FF949MNNAE;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Need Scan QR";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Need Scan QR";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flw.com.EthWallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B1C043E6283F6063007700D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Need Scan QR";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flw.com.EthWalletTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EthWallet.app/EthWallet";
+			};
+			name = Debug;
+		};
+		B1C043E7283F6063007700D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Need Scan QR";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flw.com.EthWalletTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EthWallet.app/EthWallet";
+			};
+			name = Release;
+		};
+		B1C043E9283F6063007700D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flw.com.EthWalletUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EthWallet;
+			};
+			name = Debug;
+		};
+		B1C043EA283F6063007700D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flw.com.EthWalletUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EthWallet;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B1C043B9283F605F007700D8 /* Build configuration list for PBXProject "EthWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1C043E0283F6063007700D8 /* Debug */,
+				B1C043E1283F6063007700D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1C043E2283F6063007700D8 /* Build configuration list for PBXNativeTarget "EthWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1C043E3283F6063007700D8 /* Debug */,
+				B1C043E4283F6063007700D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1C043E5283F6063007700D8 /* Build configuration list for PBXNativeTarget "EthWalletTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1C043E6283F6063007700D8 /* Debug */,
+				B1C043E7283F6063007700D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1C043E8283F6063007700D8 /* Build configuration list for PBXNativeTarget "EthWalletUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1C043E9283F6063007700D8 /* Debug */,
+				B1C043EA283F6063007700D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B1C043B6283F605F007700D8 /* Project object */;
+}
