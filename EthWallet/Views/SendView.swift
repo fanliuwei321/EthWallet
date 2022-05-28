@@ -13,6 +13,7 @@ fileprivate let navUIModel = NavUIModel(title: "Send to", leftItem: nil, rightIt
 struct SendView: View {
     @State private var inputMessage: String = ""
     @FocusState private var focusedField: Bool
+    @Environment(\.colorScheme) var currentMode
     // For dismiss this view
     @Environment(\.presentationMode) var presentationMode
     
@@ -25,7 +26,7 @@ struct SendView: View {
                 print("clicked")
             }){
                 HStack {
-                    Text("From:").padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 20)).foregroundColor(.black).font(.system(size: 16)).frame(width: 80)
+                    Text("From:").padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 20)).foregroundColor(currentMode == .dark ? .white : .black).font(.system(size: 16)).frame(width: 80)
                     HStack {
                         Image("av").resizable()
                             .frame(width: 30, height: 30, alignment: .center)
@@ -33,12 +34,12 @@ struct SendView: View {
                             .clipShape(Circle())
                             .background(Circle().stroke(Color.accentColor, lineWidth: 2)).scaledToFill()
                         VStack(alignment: .leading, spacing: 8) {
-                            Text("Louis").padding(EdgeInsets(top: 4, leading: 0, bottom: 2, trailing: 0)).foregroundColor(.black).font(.system(size: 14))
+                            Text("Louis").padding(EdgeInsets(top: 4, leading: 0, bottom: 2, trailing: 0)).foregroundColor(currentMode == .dark ? .white : .black).font(.system(size: 14))
                             Text("Balance:0ETH").padding(EdgeInsets(top: 2, leading: 0, bottom: 2, trailing: 0))
                                 .foregroundColor(.gray).font(.system(size: 12))
                         }
                         Spacer()
-                        Image(systemName: "arrowtriangle.down.fill").padding(10).foregroundColor(.black)
+                        Image(systemName: "arrowtriangle.down.fill").padding(10).foregroundColor(currentMode == .dark ? .white : .black)
                     }.overlay(
                         RoundedRectangle(cornerRadius: 10, style: .continuous)
                             .stroke(Color.gray, lineWidth: 1)
@@ -54,7 +55,7 @@ struct SendView: View {
                         focusedField.toggle()
                     }
                     Spacer()
-                    Image(systemName: "qrcode.viewfinder").padding(10).foregroundColor(.black)
+                    Image(systemName: "qrcode.viewfinder").padding(10).foregroundColor(currentMode == .dark ? .white : .black)
                 }.overlay(
                     RoundedRectangle(cornerRadius: 10, style: .continuous)
                         .stroke(Color.gray, lineWidth: 1)

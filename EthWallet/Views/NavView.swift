@@ -18,6 +18,7 @@ struct NavUIModel {
 }
 
 struct NavView: View {
+    @Environment(\.colorScheme) var currentMode
     let model: NavUIModel
     var onClickedBarButton: (_ isLeft: Bool)->Void
     var body: some View {
@@ -39,11 +40,11 @@ struct NavView: View {
             }
             VStack {
                 Spacer()
-                Text(model.title).font(.system(size: 16)).foregroundColor(.black)
+                Text(model.title).font(.system(size: 16)).foregroundColor(currentMode == .dark ? .white : .black)
                 HStack {
                     Spacer()
                     Image(systemName: "circle.fill").font(.system(size: 4)).foregroundColor(.green)
-                    Text("Etherem Main Network").font(.system(size: 12)).foregroundColor(.black)
+                    Text("Etherem Main Network").font(.system(size: 12)).foregroundColor(currentMode == .dark ? .white : .black)
                     Spacer()
                 }
                 Spacer()
@@ -65,6 +66,6 @@ struct NavView: View {
                     }.padding(10)
                 }
             }
-        }.frame(height: 44)
+        }.frame(height: 44).accentColor(Color(red: 21.0/255.0, green: 122.0/255.0, blue: 199.0/255.0))
     }
 }
