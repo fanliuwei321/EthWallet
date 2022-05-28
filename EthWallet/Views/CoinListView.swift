@@ -40,7 +40,7 @@ struct CoinListView: View {
                 Image("av").resizable().frame(width: 60, height: 60, alignment: .center).padding(10)
                 VStack(alignment: .leading, spacing: 10) {
                     Text(model.symbol)
-                    Text("\(model.metrics.market_data.price_usd)")
+                    Text("$\(model.metrics.market_data.price_usd)")
                 }
                 Spacer()
             }

@@ -1,6 +1,7 @@
 # EthWallet App for SwiftUI Demo
 
-该工程作为Demo，主要完成 首页、扫描二维码、发送 三个页面
+该工程作为Demo，主要完成 首页、扫描二维码、发送 三个页面(可观看Demo.mp4)
+由于个人开发者账号过期，未能传TestFlight包
 
 ## 工程结构：
 ### 目录结构如下：
